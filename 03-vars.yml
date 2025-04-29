@@ -23,6 +23,6 @@
   hosts: localhost
   connection: local
   roles:
-    - demo\vars\main.yml
+    - demo
 
 
