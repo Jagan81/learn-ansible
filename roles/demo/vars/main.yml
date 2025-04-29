@@ -1,8 +1,1 @@
-- name: Print Hello World
-  ansible.builtin.debug:
-    msg: Hello world
-
-
-- name: Print URL
-  ansible.builtin.debug:
-    msg: URL - {{ URL }}
+URL: role-vars.google.com

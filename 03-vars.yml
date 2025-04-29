@@ -19,10 +19,10 @@
       vars:
         URL: task.google.com
 
-#- name: Role Variables
-#  hosts: localhost
-#  connection: local
-#  roles:
-#    - demo
+- name: Role Variables
+  hosts: localhost
+  connection: local
+  roles:
+    - demo
 
 
