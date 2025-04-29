@@ -1,0 +1,28 @@
+- name: Play Variables
+  hosts: localhost
+  connection: local
+  vars:
+    URL: play.google.com
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: "{{ URL }}"
+
+
+- name: Task Variables
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: "{{ URL }}"
+      vars:
+        URL: task.google.com
+
+- name: Role Variables
+  hosts: localhost
+  connection: local
+  roles:
+    - demo
+
+
