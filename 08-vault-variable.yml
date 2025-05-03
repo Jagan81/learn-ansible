@@ -6,4 +6,4 @@
   tasks:
     - name: Print password
       ansible.builtin.debug:
-      msg: password - {{ password }}
+      msg: password - "{{ password }}"
