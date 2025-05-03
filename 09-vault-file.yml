@@ -1,0 +1,9 @@
+- name: Templates
+  hosts: localhost
+  connection: local
+  vars:
+    password: Abcd@1233
+  tasks:
+    - name: print password
+      ansible.builtin.debug:
+        msg: password - {{ password }}
