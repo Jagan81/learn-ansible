@@ -4,6 +4,6 @@
   vars:
     password: Abcd@123
   tasks:
-    - name: Print password
+    - name: echo password
       ansible.builtin.debug:
       msg: password - "{{ password }}"
